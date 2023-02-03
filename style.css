@@ -21,6 +21,7 @@ a {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 body {
@@ -45,17 +46,27 @@ body {
   color: #ffffff;
 }
 
+.title {
+  font-family: var(--playfair);
+  font-size: 40px;
+  letter-spacing: 0.05em;
+}
+
+.text {
+  font-family: var(--inter);
+  font-size: 24px;
+  line-height: 1.5;
+}
+
 /* //////////////////////////////////////GERAIS ↑↑↑↑↑↑↑↑ */
 
-#header {
-  background-color: #0a2647;
-}
 .nav-header {
   width: 100%;
   background-color: #0a2647;
   padding: 0 60px;
   position: fixed;
   box-shadow: 0 5px 10px #00000030;
+  z-index: 10;
 }
 .nav-container {
   display: flex;
@@ -120,3 +131,54 @@ body {
     padding: 10px 0;
   }
 }
+
+/* //////////////////////////////////////NAV BAR ↑↑↑↑↑↑↑↑ */
+
+#header {
+  background-color: #0a2647;
+  padding-top: 142px;
+  padding-bottom: 240px;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.header-title {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.img-intro {
+  position: absolute;
+  right: 0;
+  top: 142px;
+  z-index: 0;
+}
+
+h1 {
+  font-family: var(--playfair);
+  font-size: 92px;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.header-text {
+  width: 100%;
+  bottom: 112px;
+  z-index: 5;
+}
+
+.header-text div {
+  padding: 54px 72px;
+  background-color: #e98ead;
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.header-text h2 {
+  margin-bottom: 18px;
+}
+
+/* //////////////////////////////////////HEADER  ↑↑↑↑↑↑↑↑ */
